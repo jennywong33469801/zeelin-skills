@@ -1,0 +1,82 @@
+# AI日报格式参数模板配置
+# 换主题时：改此文件常量，不改推理逻辑
+
+# ─── 品牌信息 ──────────────────────────────────
+[brand]
+name = "AI日报"
+subtitle = "资讯版"
+footer_note = "10条精选 · 信源经可靠性核验 · 仅供参考，不构成投资建议"
+
+# ─── 颜色体系 ──────────────────────────────────
+[colors]
+# 主色：深夜蓝
+primary = "#1a1a1a"
+# 强调色：红色
+accent = "#ff3b30"
+# 文字色
+text_headline = "#000000"
+text_body = "#444444"
+text_meta = "#666666"
+text_light = "#aaa"
+# 背景色
+bg_page = "#ffffff"
+bg_section_divider = "#e0e0e0"
+
+# ─── 标签颜色体系 ──────────────────────────────
+[tag_colors]
+model = { bg = "#fff3cd", text = "#856404" }      # 大模型 · 金黄
+product = { bg = "#d4edda", text = "#155724" }   # 产品 · 绿色
+security = { bg = "#f8d7da", text = "#721c24" }   # 安全 · 红色
+investment = { bg = "#d1ecf1", text = "#0c5460" } # 投资 · 蓝色
+policy = { bg = "#e2e3e5", text = "#383d41" }     # 政策 · 灰色
+hardware = { bg = "#e4e6e9", text = "#1a1a1a" }   # 硬件 · 深灰
+industry = { bg = "#ede7f6", text = "#4a148c" }   # 产业 · 紫色
+research = { bg = "#fce4ec", text = "#880e4f" }    # 研究 · 粉色
+data = { bg = "#e8f5e9", text = "#1b5e20" }       # 数据 · 深绿
+opensource = { bg = "#e3f2fd", text = "#0d47a1" }  # 开源 · 蓝色
+robot = { bg = "#e3f2fd", text = "#0d47a1" }      # 机器人 · 蓝色
+event = { bg = "#fff8e1", text = "#f57f17" }      # 活动 · 橙黄
+
+# ─── 排版参数 ──────────────────────────────────
+[layout]
+# 卡片尺寸（像素）
+card_width = 1080
+# 内容宽度
+content_padding_x = 60
+content_padding_y = 50
+
+[fonts]
+# 英文字体
+font_headline_en = "Playfair Display"
+font_body_en = "Inter"
+font_mono_en = "JetBrains Mono"
+# 中文字体（系统默认）
+font_cn = "system-ui, -apple-system, sans-serif"
+
+[typography]
+headline_size = 46   # 头条标题
+headline_weight = 700
+story_title_size = 21
+story_body_size = 14.5
+story_why_size = 13
+source_size = 11
+
+# ─── 结构参数 ──────────────────────────────────
+[structure]
+# 每期条数
+story_count = 10
+# 头条单独占区块
+has_headline = true
+
+# ─── VOL编号配置 ───────────────────────────────
+[vol]
+# VOL.1 起始日期
+start_date = "2024-03-10"
+# 自动推算（true=运行时计算，false=手动指定）
+auto_vol = true
+
+# ─── 封面图参数 ────────────────────────────────
+[cover]
+width = 1080
+height = 540   # 2:1 比例
+prompt_style = "modern digital illustration, tech blueprint, dark background with accent lighting"
